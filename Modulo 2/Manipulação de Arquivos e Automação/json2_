@@ -1,0 +1,15 @@
+import json
+
+aluno = {
+    "nome": "lucas",
+    "idade": 16,
+    "aprovado": True
+}
+
+aluno_json = json.dumps(aluno)
+print("JSON", aluno_json)
+print(type(aluno_json))
+
+aluno_dict = json.loads(aluno_json)
+print("Dicionário:", aluno_dict)
+print(type(aluno_dict))
