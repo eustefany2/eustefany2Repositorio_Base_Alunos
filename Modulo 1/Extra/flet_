@@ -1,0 +1,14 @@
+import flet as ft
+
+def main(page:ft.Page):
+    page.title = "tela de login"
+
+    texto = ft.Text("login: ",size=40,color="green")
+    entrada_dados = ft.TextField(label="login")
+    senha = ft.Text("senha: ",size=30,color="green")
+    entrada_senha = ft.TextField(password=True,can_reveal_password=True)
+    botao = ft.ElevatedButton("clique aqui")
+    page.add(ft.Row([texto,entrada_dados]),
+             ft.Row([senha,entrada_senha])
+    )
+ft.app(target=main)
