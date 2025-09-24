@@ -1,0 +1,9 @@
+import requests
+
+response = requests.get ('https://github.com/')
+print(response.status_code)
+if response.status_code <= 299:
+    print("o site esta funcionando")
+else:
+    print("deu algo errado")
+algo errado,arrumar!
